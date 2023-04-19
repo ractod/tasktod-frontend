@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./font.css);
+
+* { font-family: Inter !important ; box-sizing: border-box; }
+
+body {
+    overflow-x: hidden ;
+    min-height: 100vh ;
+    min-width: 100vw ;
+    background-color: theme("colors.gray")  ;
+}

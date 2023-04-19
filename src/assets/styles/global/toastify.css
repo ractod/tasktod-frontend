@@ -1,0 +1,53 @@
+
+/* ==== global styles ==== */
+.Toastify__toast-container { width: fit-content !important; }
+.Toastify__toast-container {
+    width: 100vw !important ;
+    top: 0  !important;
+    padding: 0 !important;
+}
+
+.Toastify__toast { 
+    justify-content: center !important;
+    font-weight: 700 !important;
+    box-shadow: theme("boxShadow.md");
+    margin-top: 5px !important;
+}
+
+.Toastify__toast:first-child { margin-top: 0 !important; }
+
+.Toastify__close-button { 
+    opacity: 100% !important; 
+    align-self: center !important;
+}
+
+.Toastify__close-button > svg {
+    width: 25px !important ;
+    height: 25px !important ;
+}
+
+/* ==== success styles ==== */
+
+.Toastify__toast--success { 
+    border-color: theme("colors.green.dark") !important;
+    background-color: theme("colors.green.light") !important;
+    color: theme("colors.green.dark") !important ;
+}
+
+.Toastify__toast--success .Toastify__close-button > svg, 
+.Toastify__toast--success .Toastify__toast-icon > svg {
+    fill: theme("colors.green.dark") !important;
+}
+
+/* ==== error styles ==== */
+.Toastify__toast--error { 
+    border-color: theme("colors.red.dark");
+    background-color: theme("colors.red.light") !important;
+    color: theme("colors.red.dark") !important ;
+}
+
+.Toastify__toast--error .Toastify__toast-icon > svg, 
+.Toastify__toast--error .Toastify__close-button > svg {
+    fill: theme("colors.red.dark") !important
+}
+
